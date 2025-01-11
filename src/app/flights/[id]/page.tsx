@@ -50,6 +50,7 @@ export default function FlightDetails({ params }: { params: Promise<{ id: string
         setError('Failed to fetch flight details')
       }
     } catch (err) {
+      console.error(err);
       setError('An error occurred while fetching flight details')
     } finally {
       setIsLoading(false)

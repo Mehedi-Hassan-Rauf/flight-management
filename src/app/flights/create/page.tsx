@@ -46,6 +46,7 @@ export default function CreateFlight() {
         setError(errorData.message || 'Failed to create flight')
       }
     } catch (err) {
+      console.error(err)
       setError('An error occurred while creating the flight')
     } finally {
       setIsSubmitting(false)
