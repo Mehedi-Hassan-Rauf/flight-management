@@ -24,9 +24,9 @@ export function Navigation() {
       <div className="container mx-auto flex justify-between items-center">
         {
           isLoggedIn ? (
-            <Link href="/" className="text-xl font-bold">Flight Management</Link>
-          ) : (
             <Link href="/flights" className="text-xl font-bold">Flight Management</Link>
+          ) : (
+            <Link href="/" className="text-xl font-bold">Flight Management</Link>
           )
         }
         <div className="space-x-4">
